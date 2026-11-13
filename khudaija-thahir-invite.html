@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>വിവാഹ ക്ഷണപത്രം | ഖുദൈജ ഫഹീമ &amp; ത്വാഹിർ ജുമാൻ</title>
+<meta name="description" content="ഖുദൈജ ഫഹീമയുടെയും മൗലവി ത്വാഹിർ ജുമാൻ ആരിഫി ബാഖവിയുടെയും വിവാഹം. 3 ഡിസംബർ 2026 വ്യാഴം, ബ്ലൂ സ്റ്റാർ ഓഡിറ്റോറിയം, കാടാമ്പുഴ, വളാഞ്ചേരി.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Malayalam:wght@400;600;700&family=Manjari:wght@400;700&family=Amiri:wght@400;700&family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500;1,700&family=Jost:wght@400;500&display=swap">
+<style>
+:root{--paper:#fbf7ee;--teal:#0b6a5c;--copper:#b8733a;--ink:#17332e;--soft:#5d746e;--card:#fffdf8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0b1d1a;--teal:#5fd1bc;--copper:#e0955a;--ink:#e9f2ee;--soft:#9db8b1;--card:#122a26}}
+:root[data-theme="dark"]{--paper:#0b1d1a;--teal:#5fd1bc;--copper:#e0955a;--ink:#e9f2ee;--soft:#9db8b1;--card:#122a26}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.9 "Noto Serif Malayalam","Manjari",serif;overflow-x:hidden}
+body.locked{overflow:hidden}
+canvas#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:60}
+#bar{position:fixed;left:0;top:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--teal),var(--copper));z-index:80}
+.foil{background:linear-gradient(100deg,var(--copper) 35%,#f3c995 50%,var(--copper) 65%) 0 0/250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:foil 4s linear infinite}
+@keyframes foil{to{background-position:-250% 0}}
+.ar{font:400 clamp(28px,8vw,38px)/1.6 "Amiri",serif;color:var(--teal)}
+
+/* booklet gate */
+#gate{position:fixed;inset:0;z-index:50;display:grid;place-items:center;background:radial-gradient(90% 70% at 50% 40%,#13806f,#06322b);transition:opacity 1s 2.1s,visibility 0s 3.1s}
+#gate.open{opacity:0;visibility:hidden}
+.gw{display:grid;justify-items:center;gap:30px}
+.book{position:relative;width:min(70vw,300px);aspect-ratio:3/4.2;perspective:1400px;border:0;background:none;padding:0;cursor:pointer;transition:transform 1.6s;animation:bob 3.2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-8px)}}
+#gate.open .book{animation:none;transform:translateX(26%) scale(1.06)}
+.pgin{position:absolute;inset:0;background:var(--card);border-radius:4px 10px 10px 4px;border:1px solid var(--copper);display:grid;place-items:center;align-content:center;gap:8px;text-align:center;padding:16px;box-shadow:0 20px 40px rgba(0,0,0,.4)}
+.pgin small{font:700 15px "Manjari";color:var(--teal)}
+.cv{position:absolute;inset:0;transform-origin:0 50%;transform-style:preserve-3d;transition:transform 1.6s cubic-bezier(.6,0,.2,1)}
+#gate.open .cv{transform:rotateY(-168deg)}
+.cv>div{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:4px 10px 10px 4px}
+.cf{background:linear-gradient(135deg,#0f7a6a,#083f37);display:grid;place-items:center;align-content:center;gap:6px;text-align:center;box-shadow:0 20px 40px rgba(0,0,0,.45)}
+.cf::before{content:"";position:absolute;inset:12px;border:1.5px solid var(--copper);border-radius:4px}
+.cf b{font:700 clamp(24px,7vw,30px)/1.4 "Noto Serif Malayalam",serif;position:relative}
+.cf .ar{color:#e8c9a4;font-size:24px;position:relative}
+.cb{background:var(--card);transform:rotateY(180deg);border:1px solid var(--copper)}
+.fw{position:absolute;width:54px;animation:spin 30s linear infinite}
+@keyframes spin{to{rotate:360deg}}
+.fw ellipse{fill:var(--copper);opacity:.9}.fw ellipse:nth-child(even){fill:none;stroke:var(--copper);stroke-width:.8}.fw circle{fill:var(--card)}
+.cf .fw:nth-of-type(1){left:6px;top:6px}.cf .fw:nth-of-type(2){right:6px;top:6px}.cf .fw:nth-of-type(3){left:6px;bottom:6px}.cf .fw:nth-of-type(4){right:6px;bottom:6px}
+.gtap{font:400 14px "Manjari";letter-spacing:.06em;color:#e8c9a4;animation:blink 2.2s infinite}
+@keyframes blink{50%{opacity:.3}}
+
+/* growing vines */
+.vn{position:fixed;top:0;height:100%;width:40px;pointer-events:none;z-index:2;opacity:0;transition:opacity 1.5s 2.4s}
+.lit .vn{opacity:1}
+#vl{left:-4px}#vr{right:-4px;transform:scaleX(-1)}
+.vs{fill:none;stroke:var(--teal);stroke-width:1.6;stroke-linecap:round;transition:stroke-dashoffset .5s linear}
+.lf{transform:scale(0);transition:transform .8s cubic-bezier(.2,1.6,.4,1)}.lf.on{transform:scale(1)}
+.lfp{fill:var(--teal);opacity:.85}
+.vn .fw{position:static;animation:none}
+
+/* hero + panels */
+.pn{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:88px 38px;text-align:center}
+.hero{min-height:100svh;display:grid;place-content:center;padding-top:70px}
+.s{opacity:0;transform:translateY(18px);transition:opacity 1s calc(var(--d)*.4s + 1.2s),transform 1s calc(var(--d)*.4s + 1.2s)}
+.lit .s{opacity:1;transform:none}
+.tt{font:700 clamp(32px,9vw,46px)/1.5 "Noto Serif Malayalam",serif}
+.host b{display:block;font-weight:700;font-size:clamp(19px,5.4vw,24px);line-height:1.7;color:var(--teal)}
+.host small,.sm{display:block;color:var(--soft);font:400 15px/1.8 "Manjari",sans-serif}
+.host span{display:block;font-weight:600;font-size:17px}
+.orn{display:block;margin:14px auto;width:min(70%,260px);height:18px;overflow:visible}
+.orn path{fill:none;stroke:var(--copper);stroke-width:1.2;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2s}
+.lit .hero .orn path,.orn.in path{stroke-dashoffset:0;transition-delay:calc(var(--d,2)*.4s + 1.2s)}
+.orn.in path{transition-delay:.2s}
+.line{font-size:20px;margin:18px 0 0}
+.cue{position:absolute;left:50%;bottom:22px;width:22px;height:36px;border:1.5px solid var(--copper);border-radius:12px;translate:-50% 0;opacity:0;transition:opacity 1s 5s}
+.lit .cue{opacity:1}
+.cue::after{content:"";position:absolute;left:50%;top:7px;width:3px;height:7px;border-radius:2px;background:var(--copper);translate:-50% 0;animation:wheel 1.8s infinite}
+@keyframes wheel{to{transform:translateY(12px);opacity:0}}
+.rv{opacity:0;transform:translateY(40px);transition:opacity .9s,transform .9s cubic-bezier(.2,.8,.2,1)}
+.rv.l{transform:translateX(-60px)}.rv.r{transform:translateX(60px)}
+.rv.in{opacity:1;transform:none}
+.lb{display:block;font:700 17px "Manjari",sans-serif;color:var(--copper);letter-spacing:.08em}
+.nm{font:700 clamp(36px,11vw,56px)/1.5 "Noto Serif Malayalam",serif;color:var(--teal);margin:0}
+.w{display:inline-block;margin:0 6px;opacity:0;transform:translateY(34px) scale(.9);filter:blur(6px);transition:all 1s calc(var(--i)*.22s + .2s) cubic-bezier(.2,.9,.2,1)}
+.in .w{opacity:1;transform:none;filter:none}
+.dot{display:inline-block;width:9px;height:9px;background:var(--copper);rotate:45deg;margin:0 10px;vertical-align:middle;animation:pulse 2.4s infinite}
+@keyframes pulse{50%{scale:1.5}}
+
+/* date box */
+.bx{position:relative;padding:30px 22px;background:var(--card);border-radius:14px}
+.bx svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.bx rect{fill:none;stroke:var(--copper);stroke-width:1.5;stroke-dasharray:1;stroke-dashoffset:1;transition:stroke-dashoffset 2.4s .2s}
+.in .bx rect,.bx.in rect{stroke-dashoffset:0}
+.bx big{display:block;font:700 clamp(24px,7vw,32px)/1.6 "Noto Serif Malayalam",serif;color:var(--teal)}
+.cd{display:flex;justify-content:center;align-items:flex-start;gap:6px;margin-top:8px}
+.cd div{min-width:62px}
+.cd b{display:block;font:700 clamp(34px,10vw,48px)/1.2 "Manjari",sans-serif;color:var(--teal)}
+.cd b.tick{animation:drop .5s}
+@keyframes drop{from{transform:translateY(-40%);opacity:0}}
+.cd small{font:400 13px "Manjari";color:var(--soft)}
+.cd i{font:700 34px/1.4 "Manjari";color:var(--copper);font-style:normal;animation:blink 1s infinite}
+.pin{width:46px;height:56px;margin:0 auto 6px;display:block;animation:hop 2s ease-in-out infinite}
+@keyframes hop{50%{transform:translateY(-8px)}}
+.vt{font:700 clamp(28px,8vw,40px)/1.5 "Noto Serif Malayalam",serif;color:var(--teal);margin:0}
+.btn{display:inline-block;margin:8px 5px;padding:12px 24px;border-radius:30px;border:1.5px solid var(--copper);background:transparent;color:var(--ink);font:700 16px "Manjari",sans-serif;text-decoration:none;cursor:pointer;position:relative;overflow:hidden;z-index:0;transition:color .4s,transform .3s}
+.btn::before{content:"";position:absolute;inset:0;background:var(--copper);transform:translateY(101%);transition:transform .45s;z-index:-1}
+.btn:hover{transform:translateY(-3px);color:#fff}.btn:hover::before{transform:none}
+.btn.fill{background:var(--teal);border-color:var(--teal);color:#fff;animation:glow 2.4s infinite}.btn.fill::before{display:none}
+@keyframes glow{0%{box-shadow:0 0 0 0 rgba(11,106,92,.5)}70%,100%{box-shadow:0 0 0 14px rgba(11,106,92,0)}}
+.btn:focus-visible,.book:focus-visible{outline:2px solid var(--copper);outline-offset:4px}
+.mq{position:relative;z-index:1;overflow:hidden;white-space:nowrap;background:var(--teal);padding:12px 0}
+.mq div{display:inline-block;font:400 28px "Amiri",serif;color:#fff;animation:mq 30s linear infinite}
+.mq span{padding:0 34px}
+@keyframes mq{to{transform:translateX(-50%)}}
+footer{position:relative;z-index:1;padding:50px 38px 80px;text-align:center}
+#lang{position:fixed;top:calc(10px + env(safe-area-inset-top,0px));right:12px;z-index:90;padding:6px 16px;border-radius:20px;border:1.5px solid var(--copper);background:var(--card);color:var(--ink);font:700 14px "Manjari","Jost",sans-serif;cursor:pointer;transition:transform .3s}
+#lang:hover{transform:translateY(-2px)}#lang:focus-visible{outline:2px solid var(--copper);outline-offset:3px}
+html[lang=en] body{font-family:"Cormorant Garamond",serif;font-size:20px;line-height:1.6}
+html[lang=en] .tt,html[lang=en] .host b,html[lang=en] .nm,html[lang=en] .bx big,html[lang=en] .vt,html[lang=en] .cf b,html[lang=en] .cd b{font-family:"Cormorant Garamond",serif;font-weight:700;line-height:1.15}
+html[lang=en] .host small,html[lang=en] .sm,html[lang=en] .lb,html[lang=en] .btn,html[lang=en] .cd small,html[lang=en] .pgin small,html[lang=en] .gtap{font-family:"Jost",sans-serif}
+html[lang=en] .tt{font-size:clamp(40px,12vw,58px)}
+html[lang=en] .nm{font-size:clamp(46px,14vw,70px);font-style:italic}
+html[lang=en] .host b{font-size:clamp(24px,7vw,30px);line-height:1.25}
+html[lang=en] .host span{font-size:20px}
+html[lang=en] .host small,html[lang=en] .sm{font-size:14px;letter-spacing:.04em}
+html[lang=en] .lb{font-size:13px;letter-spacing:.24em;text-transform:uppercase}
+html[lang=en] .btn{font-size:13px;letter-spacing:.1em}
+html[lang=en] .line{font-size:24px;font-style:italic}
+html[lang=en] .bx big{font-size:clamp(28px,8vw,36px)}
+html[lang=en] .vt{font-size:clamp(34px,10vw,48px)}
+html[lang=en] .cf b{font-size:clamp(30px,9vw,38px)}
+html[lang=en] footer .tt{font-size:30px!important}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01s!important;animation-delay:0s!important;transition-duration:.01s!important;transition-delay:0s!important;animation-iteration-count:1!important}}
+</style>
+</head>
+<body class="locked">
+<div id="bar"></div><button id="lang" aria-label="Change language">English</button>
+<canvas id="fx"></canvas>
+<svg class="vn" id="vl" aria-hidden="true"></svg><svg class="vn" id="vr" aria-hidden="true"></svg>
+
+<div id="gate">
+  <div class="gw">
+    <button class="book" id="openBtn" aria-label="ക്ഷണപത്രം തുറക്കുക">
+      <div class="pgin"><div class="ar" dir="rtl">بسم الله الرحمن الرحيم</div><small>ഖുദൈജ ഫഹീമ</small><small>ത്വാഹിർ ജുമാൻ</small></div>
+      <div class="cv">
+        <div class="cf">
+          <svg class="fw" viewBox="-20 -20 40 40" data-f="8"></svg><svg class="fw" viewBox="-20 -20 40 40" data-f="8"></svg><svg class="fw" viewBox="-20 -20 40 40" data-f="8"></svg><svg class="fw" viewBox="-20 -20 40 40" data-f="8"></svg>
+          <b class="foil">വിവാഹ<br>ക്ഷണപത്രം</b><div class="ar" dir="rtl">بسم الله الرحمن الرحيم</div>
+        </div>
+        <div class="cb"></div>
+      </div>
+    </button>
+    <div class="gtap">തുറക്കാൻ ടാപ്പ് ചെയ്യൂ</div>
+  </div>
+</div>
+
+<header class="pn hero" id="top">
+  <div class="foil tt s" style="--d:0">വിവാഹ ക്ഷണപത്രം</div>
+  <div class="ar s" dir="rtl" style="--d:1">بسم الله الرحمن الرحيم</div>
+  <svg class="orn" viewBox="0 0 200 18" style="--d:2"><path pathLength="1" d="M0 9H84M116 9H200M100 2l7 7-7 7-7-7z"/></svg>
+  <div class="host s" style="--d:3">
+    <b>മുഹമ്മദ് അബ്ദുൽ ഖാദിർ ആരിഫി നൂരി ചിശ്തി ഖാദിരി</b>
+    <small>(ഖലീഫ, സിൽസില ആരിഫിയ്യ നൂരിയ്യ)</small>
+    <span>S/O മൗലാന ടി.പി. ഹുസൈൻ മുസ്‌ലിയാർ നദ്രിശാഹ് നൂരി (റ)</span>
+    <small>നൂരിയാബാദ്, കാടാമ്പുഴ, വളാഞ്ചേരി</small>
+  </div>
+  <p class="line s" style="--d:5">എന്റെ മകൾ വിവാഹിതയാവുകയാണ്.</p>
+  <div class="cue"></div>
+</header>
+
+<section class="pn">
+  <span class="lb rv l">വധു</span>
+  <h1 class="nm rv l" data-words>ഖുദൈജ ഫഹീമ</h1>
+  <svg class="orn rv" viewBox="0 0 200 18" style="margin:26px auto"><path pathLength="1" d="M0 9H84M116 9H200M100 2l7 7-7 7-7-7z"/></svg>
+  <span class="lb rv r">വരൻ</span>
+  <h2 class="nm rv r" data-words>മൗലവി ത്വാഹിർ ജുമാൻ ആരിഫി ബാഖവി</h2>
+  <div class="host rv r"><span>S/O മുഹമ്മദ് മുസ്‌ലിയാർ ലത്വീഫി</span><small>(ഖലീഫ, സിൽസില ആരിഫിയ്യ നൂരിയ്യ)</small></div>
+</section>
+
+<section class="pn">
+  <div class="bx rv">
+    <svg aria-hidden="true"><rect x="0" y="0" width="100%" height="100%" rx="14" pathLength="1"/></svg>
+    <span class="lb">തീയതി</span>
+    <big>3 ഡിസംബർ 2026 വ്യാഴം</big>
+    <big>23 ജമാദുൽ ആഖിർ 1448</big>
+    <span class="sm" style="font-size:18px">(രാവിലെ 10 മുതൽ 3 മണിവരെ)</span>
+  </div>
+  <p class="sm rv" style="margin:34px 0 0">വിവാഹത്തിലേക്ക് ഇനി</p>
+  <div class="cd rv" id="cd"></div>
+</section>
+
+<section class="pn">
+  <svg class="pin rv" viewBox="0 0 46 56" aria-hidden="true"><path d="M23 54C23 54 5 33 5 21a18 18 0 0 1 36 0C41 33 23 54 23 54z" fill="var(--copper)"/><circle cx="23" cy="21" r="7" fill="var(--card)"/></svg>
+  <h2 class="vt rv">ബ്ലൂ സ്റ്റാർ ഓഡിറ്റോറിയം</h2>
+  <p class="sm rv" style="font-size:17px">നൂരിയാബാദ് റോഡ്, കാടാമ്പുഴ, വളാഞ്ചേരി, മലപ്പുറം.</p>
+  <div class="rv" style="margin-top:14px"><a class="btn fill" href="https://www.google.com/maps/search/?api=1&query=Blue+Star+Auditorium+Nooriyabad+Road+Kadampuzha+Valanchery+Malappuram" target="_blank" rel="noopener">ലൊക്കേഷൻ കാണുക</a></div>
+</section>
+
+<section class="pn">
+  <svg class="orn rv" viewBox="0 0 200 18"><path pathLength="1" d="M0 9H84M116 9H200M100 2l7 7-7 7-7-7z"/></svg>
+  <p class="line rv" style="margin-top:0">താങ്കളെയും കുടുംബത്തെയും വിവാഹസൽക്കാരത്തിലേക്ക് സ്നേഹപൂർവ്വം ക്ഷണിക്കുന്നു.</p>
+  <p class="rv" style="margin-top:36px"><span class="lb">ആശംസകളോടെ</span><b style="color:var(--teal)">നദ്രിശാഹ് നൂരി കുടുംബം</b><span class="sm">നൂരിയാബാദ്, കാടാമ്പുഴ, വളാഞ്ചേരി.</span></p>
+  <div class="rv" style="margin-top:20px"><button class="btn" id="share">WhatsApp-ൽ പങ്കിടുക</button><button class="btn" id="cal">കലണ്ടറിൽ ചേർക്കുക</button></div>
+</section>
+
+<div class="mq" aria-hidden="true"><div id="mqIn"></div></div>
+<footer><span class="foil tt" style="font-size:26px">ഖുദൈജ ഫഹീമ <i class="dot"></i> ത്വാഹിർ ജുമാൻ</span></footer>
+
+<script>
+(function(){
+var DATE=new Date("2026-12-03T10:00:00+05:30"),RM=matchMedia("(prefers-reduced-motion:reduce)").matches,NS="http://www.w3.org/2000/svg";
+var $=function(s){return document.querySelector(s)};
+function mk(t,a,p){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e}
+function fl(n,r){var h="";for(var i=0;i<n;i++)h+='<ellipse cx="0" cy="-'+r*.55+'" rx="'+r*.26+'" ry="'+r*.5+'" transform="rotate('+i*360/n+')"/>';return h+'<circle r="'+r*.16+'"/>'}
+document.querySelectorAll("[data-f]").forEach(function(s){s.innerHTML=fl(+s.dataset.f,18)});
+
+/* words (whole words, so Malayalam letters stay joined) */
+document.querySelectorAll("[data-words]").forEach(function(el){var ws=el.textContent.trim().split(/\s+/);el.textContent="";
+  ws.forEach(function(w,i){var s=document.createElement("span");s.className="w";s.textContent=w;s.style.setProperty("--i",i);el.appendChild(s)})});
+$("#mqIn").innerHTML=Array(12).join("<span>بارك الله لكما وبارك عليكما وجمع بينكما في خير</span>");
+
+/* countdown */
+var cd=$("#cd");cd.innerHTML=[["ദിവസം"],["മണിക്കൂർ"],["മിനിറ്റ്"],["സെക്കൻഡ്"]].map(function(l,i){return(i?"<i>:</i>":"")+"<div><b>00</b><small>"+l[0]+"</small></div>"}).join("");
+var bs=cd.querySelectorAll("b");
+function upd(){var d=Math.max(0,DATE-Date.now()),v=[Math.floor(d/864e5),Math.floor(d/36e5)%24,Math.floor(d/6e4)%60,Math.floor(d/1e3)%60];
+  v.forEach(function(n,i){var s=String(n).padStart(2,"0");if(bs[i].textContent!==s){bs[i].textContent=s;bs[i].classList.remove("tick");void bs[i].offsetWidth;bs[i].classList.add("tick")}})}
+upd();setInterval(upd,1000);
+
+/* scroll reveals */
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.25});
+document.querySelectorAll(".rv").forEach(function(el){io.observe(el)});
+
+/* vines that grow as you scroll */
+var VS=[];
+function build(){VS=[];["vl","vr"].forEach(function(id){var s=$("#"+id),H=innerHeight;s.innerHTML="";s.setAttribute("viewBox","0 0 40 "+H);
+  var d="M20 0";for(var y=70,i=0;y<=H+70;y+=70,i++)d+=" Q"+(i%2?3:37)+" "+(y-35)+" 20 "+y;
+  var p=mk("path",{d:d,"class":"vs"},s),L=p.getTotalLength();p.style.strokeDasharray=L;p.style.strokeDashoffset=L;
+  var lv=[],n=Math.floor(H/36);
+  for(var k=1;k<n;k++){var fr=k/n,q=p.getPointAtLength(fr*L),q2=p.getPointAtLength(Math.min(L,fr*L+2)),a=Math.atan2(q2.y-q.y,q2.x-q.x)*180/Math.PI,sd=k%2?1:-1;
+    var g=mk("g",{transform:"translate("+q.x+" "+q.y+") rotate("+(a+sd*55)+")"},s),g2=mk("g",{"class":"lf"},g);
+    if(k%6===0)g2.innerHTML='<g class="fw" transform="scale(.5)">'+fl(6,16)+'</g>';else mk("path",{"class":"lfp",d:"M0 0C5 -7 17 -7 24 0C17 7 5 7 0 0Z"},g2);
+    lv.push({g:g2,f:fr})}
+  VS.push({p:p,L:L,lv:lv})});grow()}
+function grow(){var h=document.documentElement,sc=scrollY/(h.scrollHeight-innerHeight||1),p=Math.min(1,Math.max(.03,sc));
+  $("#bar").style.transform="scaleX("+sc+")";
+  VS.forEach(function(v){v.p.style.strokeDashoffset=v.L*(1-p);v.lv.forEach(function(l){l.g.classList.toggle("on",p>=l.f)})})}
+build();addEventListener("scroll",grow,{passive:true});var rt;addEventListener("resize",function(){clearTimeout(rt);rt=setTimeout(build,200)});
+
+/* petals */
+var cv=$("#fx"),cx=cv.getContext("2d"),W,H,pet=[],bits=[],pc=["rgba(184,115,58,.55)","rgba(11,106,92,.45)","rgba(255,255,255,.8)","rgba(224,149,90,.6)"];
+function size(){var r=devicePixelRatio||1;cv.width=innerWidth*r;cv.height=innerHeight*r;cx.setTransform(r,0,0,r,0,0);W=innerWidth;H=innerHeight}
+size();addEventListener("resize",size);
+function petal(top){return{x:Math.random()*W,y:top?-20:Math.random()*H,s:5+Math.random()*7,v:.4+Math.random()*.7,ph:Math.random()*6,r:Math.random()*6,c:pc[Math.floor(Math.random()*4)]}}
+if(!RM)for(var i=0;i<14;i++)pet.push(petal());
+function dp(x,y,s,r,q,c){cx.save();cx.translate(x,y);cx.rotate(r);cx.scale(1,q);cx.fillStyle=c;cx.beginPath();cx.ellipse(0,0,s,s*.55,0,0,6.3);cx.fill();cx.restore()}
+function burst(x,y,n){for(var i=0;i<n;i++){var a=Math.random()*6.28,s=3+Math.random()*7;bits.push({x:x,y:y,vx:Math.cos(a)*s,vy:Math.sin(a)*s-5,s:5+Math.random()*6,r:Math.random()*6,c:pc[i%4],l:1})}}
+function frame(t){cx.clearRect(0,0,W,H);
+  pet.forEach(function(p,i){p.y+=p.v;p.x+=Math.sin(t/900+p.ph)*.7;p.r+=.025;if(p.y>H+20)pet[i]=petal(true);dp(p.x,p.y,p.s,p.r,.55+.45*Math.sin(t/700+p.ph),p.c)});
+  bits=bits.filter(function(b){b.x+=b.vx;b.y+=b.vy;b.vy+=.22;b.vx*=.99;b.r+=.12;b.l-=.011;if(b.l<=0)return false;cx.globalAlpha=Math.min(1,b.l);dp(b.x,b.y,b.s,b.r,.7,b.c);cx.globalAlpha=1;return true});
+  requestAnimationFrame(frame)}
+requestAnimationFrame(frame);
+
+/* language toggle (Malayalam / English) */
+var LG="ml",lab=$("#lang"),UN={ml:["ദിവസം","മണിക്കൂർ","മിനിറ്റ്","സെക്കൻഡ്"],en:["Days","Hours","Mins","Secs"]},T=[
+[".cf b",0,"Wedding<br>Invitation"],[".pgin small",0,"Khudaija Faheema"],[".pgin small",1,"Thahir Juman"],[".gtap",0,"Tap to open"],
+[".hero .tt",0,"Wedding Invitation"],[".hero .host b",0,"Muhammad Abdul Qadir Arifi Noori Chishti Qadiri"],[".hero .host small",0,"(Khalifa, Silsila Arifiyya Nooriyya)"],[".hero .host span",0,"S/O Moulana T.P. Hussain Musliyar Nadrishah Noori (R)"],[".hero .host small",1,"Nooriyabad, Kadampuzha, Valanchery"],[".hero .line",0,"My daughter is getting married."],
+[".lb",0,"Bride"],[".nm",0,"Khudaija Faheema"],[".lb",1,"Groom"],[".nm",1,"Moulavi Thahir Juman Arifi Baqavi"],[".host.rv span",0,"S/O Muhammad Musliyar Latheefi"],[".host.rv small",0,"(Khalifa, Silsila Arifiyya Nooriyya)"],
+[".lb",2,"Date"],[".bx big",0,"Thursday, 3 December 2026"],[".bx big",1,"23 Jumada al-Akhirah 1448"],[".bx .sm",0,"(From 10 AM to 3 PM)"],
+["p.sm.rv",0,"Until the wedding"],[".vt",0,"Blue Star Auditorium"],["p.sm.rv",1,"Nooriyabad Road, Kadampuzha, Valanchery, Malappuram."],["a.btn.fill",0,"View location"],
+[".line.rv",0,"With love, we invite you and your family to the wedding reception."],[".lb",3,"With best wishes"],["p.rv b",0,"Nadrishah Noori family"],["p.rv .sm",0,"Nooriyabad, Kadampuzha, Valanchery."],["#share",0,"Share on WhatsApp"],["#cal",0,"Add to calendar"],
+["footer .foil",0,'Khudaija Faheema <i class="dot"></i> Thahir Juman']];
+function setLang(l){LG=l;document.documentElement.lang=l;
+  T.forEach(function(t){var el=document.querySelectorAll(t[0])[t[1]];if(!el)return;var w=el.hasAttribute("data-words");
+    if(el._ml===undefined)el._ml=w?[].map.call(el.children,function(s){return s.textContent}).join(" "):el.innerHTML;
+    var v=l==="en"?t[2]:el._ml;
+    if(w){el.textContent="";v.trim().split(/\s+/).forEach(function(x,i){var s=document.createElement("span");s.className="w";s.textContent=x;s.style.setProperty("--i",i);el.appendChild(s)})}else el.innerHTML=v});
+  cd.querySelectorAll("small").forEach(function(s,i){s.textContent=UN[l][i]});
+  lab.textContent=l==="en"?"മലയാളം":"English";
+  document.title=l==="en"?"Wedding Invitation | Khudaija Faheema & Thahir Juman":"വിവാഹ ക്ഷണപത്രം | ഖുദൈജ ഫഹീമ & ത്വാഹിർ ജുമാൻ";
+  try{localStorage.setItem("lg",l)}catch(e){}}
+lab.addEventListener("click",function(){setLang(LG==="en"?"ml":"en")});
+try{if(localStorage.getItem("lg")==="en")setLang("en")}catch(e){}
+
+/* open booklet */
+$("#openBtn").addEventListener("click",function(){$("#gate").classList.add("open");
+  setTimeout(function(){document.body.classList.remove("locked");document.body.classList.add("lit");grow()},2200);
+  if(!RM)setTimeout(function(){burst(innerWidth/2,innerHeight*.5,70)},1500)});
+
+/* actions */
+$("#share").addEventListener("click",function(){var t=LG==="en"?"Wedding invitation – Khudaija Faheema & Thahir Juman. Thursday, 3 December 2026, Blue Star Auditorium, Nooriyabad Road, Kadampuzha, Valanchery.\n"+location.href:"വിവാഹ ക്ഷണപത്രം – ഖുദൈജ ഫഹീമ & ത്വാഹിർ ജുമാൻ. 3 ഡിസംബർ 2026, ബ്ലൂ സ്റ്റാർ ഓഡിറ്റോറിയം, കാടാമ്പുഴ, വളാഞ്ചേരി.\n"+location.href;
+  if(navigator.share){navigator.share({text:t}).catch(function(){})}else open("https://wa.me/?text="+encodeURIComponent(t),"_blank");
+  if(!RM){var r=this.getBoundingClientRect();burst(r.left+r.width/2,r.top,60)}});
+$("#cal").addEventListener("click",function(){var f=function(x){return x.toISOString().replace(/[-:]|\.\d+/g,"")},e=new Date(DATE.getTime()+5*36e5);
+  var ics="BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\nSUMMARY:"+(LG==="en"?"Khudaija Faheema & Thahir Juman - Wedding":"ഖുദൈജ ഫഹീമ & ത്വാഹിർ ജുമാൻ - വിവാഹം")+"\nLOCATION:Blue Star Auditorium\\, Nooriyabad Road\\, Kadampuzha\\, Valanchery\\, Malappuram\nDTSTART:"+f(DATE)+"\nDTEND:"+f(e)+"\nEND:VEVENT\nEND:VCALENDAR";
+  var a=document.createElement("a");a.href="data:text/calendar;charset=utf-8,"+encodeURIComponent(ics);a.download="wedding.ics";a.click();
+  if(!RM){var r=this.getBoundingClientRect();burst(r.left+r.width/2,r.top,50)}});
+})();
+</script>
+</body>
+</html>
