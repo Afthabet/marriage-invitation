@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shamna &amp; Nadeem | Wedding Invitation</title>
+<meta name="description" content="Shamna &amp; Nadeem invite you to their wedding. Reception on Thursday, 26 November 2026 at 12:00 PM, Karad, near Ramanattukara, Kerala.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,600;1,400;1,600&family=Jost:wght@300;400;500&family=Amiri:wght@400;700&family=Great+Vibes&display=swap">
+<style>
+:root{--bg:#fbf5ea;--ink:#4a1626;--rose:#c4506a;--blush:#f3d5cf;--gold:#b8893a;--card:#fffaf2;--soft:#8a6a70;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#241017;--ink:#f6e7dc;--rose:#e0768e;--blush:#4a2230;--gold:#e0b560;--card:#341a24;--soft:#c9a8ad}}
+:root[data-theme="dark"]{--bg:#241017;--ink:#f6e7dc;--rose:#e0768e;--blush:#4a2230;--gold:#e0b560;--card:#341a24;--soft:#c9a8ad}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:300 17px/1.7 "Jost",system-ui,sans-serif;overflow-x:hidden}
+body.locked{overflow:hidden}
+h1,h2,.bd{font-family:"Bodoni Moda",Georgia,serif;font-weight:400;margin:0}
+canvas#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:60}
+#bar{position:fixed;left:0;top:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--gold),var(--rose));z-index:80}
+/* kasavu borders */
+.kas{position:fixed;top:0;bottom:0;width:9px;z-index:40;pointer-events:none;background:repeating-linear-gradient(0deg,var(--gold) 0 7px,transparent 7px 11px),linear-gradient(90deg,var(--gold) 0 2px,transparent 2px 7px,var(--gold) 7px 9px);background-blend-mode:normal;opacity:.85}
+.kas::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(255,255,255,.85),transparent);background-size:100% 30%;background-repeat:no-repeat;animation:shine 5s linear infinite}
+.kas.l{left:0}.kas.r{right:0}.kas.r::after{animation-delay:-2.5s}
+@keyframes shine{from{background-position:0 -40%}to{background-position:0 140%}}
+
+/* envelope gate */
+#gate{position:fixed;inset:0;z-index:50;display:grid;place-items:center;background:radial-gradient(90% 70% at 50% 40%,var(--blush),var(--bg));transition:opacity 1.1s 2.2s,visibility 0s 3.3s}
+#gate.open{opacity:0;visibility:hidden}
+.gw{display:grid;justify-items:center;gap:34px}
+.env{position:relative;width:min(78vw,340px);aspect-ratio:3/2;perspective:1000px;cursor:pointer;border:0;background:none;padding:0;animation:bob 3s ease-in-out infinite}
+#gate.open .env{animation:none}
+@keyframes bob{50%{transform:translateY(-8px) rotate(-1deg)}}
+.env>*{position:absolute}
+.eb{inset:0;background:#e6c2bb;border-radius:8px;box-shadow:0 18px 40px rgba(74,22,38,.25)}
+.lt{left:7%;right:7%;top:8%;height:86%;background:var(--card);border:1px solid var(--gold);border-radius:6px;display:grid;place-items:center;text-align:center;z-index:2;transition:transform 1s .75s cubic-bezier(.3,1.3,.5,1);line-height:1.2}
+.lt span{font:italic 400 clamp(22px,6.4vw,30px) "Bodoni Moda",serif;color:var(--ink)}
+.lt small{display:block;font:400 10px "Jost";letter-spacing:.25em;color:var(--gold);margin-top:8px}
+#gate.open .lt{transform:translateY(-62%) scale(1.06)}
+.ef{inset:0;z-index:3;background:linear-gradient(135deg,#efd0c9,#e3bbb3);clip-path:polygon(0 0,50% 55%,100% 0,100% 100%,0 100%);border-radius:8px}
+.fl{left:0;right:0;top:0;height:56%;z-index:4;background:linear-gradient(#f4d8d2,#e9c4bc);clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:50% 0;transition:transform .9s,z-index 0s .45s}
+#gate.open .fl{transform:rotateX(180deg);z-index:1}
+.wax{position:absolute;left:50%;top:44%;width:62px;height:62px;margin:-31px 0 0 -31px;z-index:5;border-radius:50%;background:radial-gradient(circle at 35% 30%,#d8506a,#9c2240 65%,#6b1429);box-shadow:0 5px 12px rgba(0,0,0,.35);display:grid;place-items:center;font:600 20px "Bodoni Moda",serif;color:rgba(255,230,230,.85);transition:opacity .4s,transform .6s}
+.wax i{display:inline-block;width:2px;height:1em;background:currentColor;margin:0 .15em;vertical-align:-.1em}
+#gate.open .wax{opacity:0;transform:scale(1.6)}
+.gtap{font-size:12px;letter-spacing:.3em;color:var(--soft);animation:blink 2.2s infinite}
+@keyframes blink{50%{opacity:.25}}
+
+/* hero */
+.hero{position:relative;z-index:1;min-height:100svh;display:grid;place-items:center;padding:60px 22px 90px;text-align:center}
+.arch{position:relative;width:min(88vw,440px);padding:84px 22px 56px;border:1.5px solid var(--gold);border-radius:999px 999px 14px 14px;background:linear-gradient(180deg,var(--blush),transparent 70%);clip-path:inset(100% 0 0 0);transition:clip-path 2s .2s cubic-bezier(.6,0,.2,1)}
+.lit .arch{clip-path:inset(-60px -60px 0 -60px)}
+.arch::before{content:"";position:absolute;inset:8px;border:1px solid var(--gold);opacity:.45;border-radius:inherit;pointer-events:none}
+.fw{position:absolute;overflow:visible;pointer-events:none;animation:spin 40s linear infinite}
+@keyframes spin{to{rotate:360deg}}
+.fw ellipse{fill:var(--rose);opacity:.85;transform:scale(0);transition:transform 1s calc(1.6s + var(--k)*.12s) cubic-bezier(.2,1.6,.4,1)}
+.fw ellipse:nth-child(even){fill:var(--blush);stroke:var(--rose);stroke-width:.6}
+.fw circle{fill:var(--gold)}
+.lit .fw ellipse{transform:scale(1)}
+.s{opacity:0;transform:translateY(18px);transition:opacity 1s calc(var(--d)*.4s + 1.2s),transform 1s calc(var(--d)*.4s + 1.2s)}
+.lit .s{opacity:1;transform:none}
+.pre{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+.nm{display:block;overflow:hidden;padding:.06em 0 .18em;font:italic 400 clamp(64px,19vw,104px)/1 "Bodoni Moda",serif}
+.ch{display:inline-block;transform:translateY(115%) rotate(7deg);color:transparent;background:linear-gradient(100deg,var(--ink) 30%,var(--rose) 44%,var(--gold) 50%,var(--rose) 56%,var(--ink) 70%) 0 0/300% 100%;-webkit-background-clip:text;background-clip:text;transition:transform 1.2s cubic-bezier(.2,.9,.2,1) calc(1.5s + var(--i)*70ms);animation:sh 6s calc(var(--i)*-.3s) linear infinite}
+.lit .ch{transform:none}
+@keyframes sh{to{background-position:-300% 0}}
+.and{display:block;font:400 44px/1 "Great Vibes",cursive;color:var(--gold);margin:-2px 0}
+.dline{margin-top:16px;font:italic 400 22px "Bodoni Moda",serif}
+.dline b{color:var(--rose);font-weight:400}
+.cue{position:absolute;left:50%;bottom:24px;width:22px;height:36px;border:1.5px solid var(--gold);border-radius:12px;translate:-50% 0;opacity:0;transition:opacity 1s 5s}
+.lit .cue{opacity:1}
+.cue::after{content:"";position:absolute;left:50%;top:7px;width:3px;height:7px;border-radius:2px;background:var(--gold);translate:-50% 0;animation:wheel 1.8s infinite}
+@keyframes wheel{to{transform:translateY(12px);opacity:0}}
+
+/* sections */
+.sec{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:96px 28px;text-align:center}
+.rv{opacity:0;transform:translateY(40px);transition:opacity .9s,transform .9s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+h2{font-size:clamp(34px,7vw,52px);font-style:italic;margin-bottom:24px}
+.verse{position:relative}
+.bloom{position:absolute;left:50%;top:50%;width:min(90vw,420px);translate:-50% -50%;opacity:.16;animation:spin 60s linear infinite}
+.ar{position:relative;font:400 clamp(44px,12vw,70px)/1.5 "Amiri",serif;color:var(--gold)}
+.ar span{display:inline-block;overflow:hidden;vertical-align:bottom;margin:0 8px}
+.ar em{display:inline-block;font-style:normal;transform:translateY(110%);transition:transform 1.2s calc(var(--i)*.4s) cubic-bezier(.2,.9,.2,1)}
+.in .ar em,.ar.in em{transform:none}
+.en{position:relative;font:italic 400 24px "Bodoni Moda",serif}
+.en small{display:block;font:300 13px "Jost";letter-spacing:.14em;color:var(--soft);margin-top:4px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.arc{padding:78px 18px 34px;background:var(--card);border:1.5px solid var(--gold);border-radius:999px 999px 18px 18px;opacity:0;transform:scale(.8) translateY(30px);transition:all .9s cubic-bezier(.2,1.3,.4,1),box-shadow .3s}
+.arc.in{opacity:1;transform:none}
+.arc:nth-child(2){transition-delay:.2s,.2s,.2s,0s}.arc:nth-child(3){transition-delay:.4s,.4s,.4s,0s}
+.arc.in:hover{transform:translateY(-8px);box-shadow:0 16px 30px rgba(74,22,38,.15);transition-delay:0s}
+.arc small{font-size:12px;letter-spacing:.22em;color:var(--soft)}
+.arc b{display:block;font:italic 400 clamp(58px,14vw,76px)/1.05 "Bodoni Moda",serif;color:var(--rose)}
+.arc p{margin:2px 0;font-size:16px}
+.cd{display:flex;justify-content:center;gap:clamp(8px,3vw,20px);flex-wrap:wrap}
+.cd div{width:clamp(70px,20vw,104px);padding:20px 0 12px;background:var(--card);border:1.5px solid var(--gold);border-radius:60px 60px 12px 12px;perspective:300px}
+.cd b{display:block;font:italic 400 clamp(32px,9vw,48px)/1 "Bodoni Moda",serif;color:var(--rose)}
+.cd b.tick{animation:flip .6s}
+@keyframes flip{from{transform:rotateX(-90deg);opacity:0}}
+.cd small{font-size:10px;letter-spacing:.2em;color:var(--soft)}
+.btn{display:inline-block;margin:8px 5px;padding:15px 28px;border-radius:40px;border:1px solid var(--gold);background:transparent;color:var(--ink);font:400 13px "Jost",sans-serif;letter-spacing:.16em;text-decoration:none;cursor:pointer;position:relative;overflow:hidden;z-index:0;transition:color .4s,transform .3s}
+.btn::before{content:"";position:absolute;inset:0;background:var(--rose);transform:translateY(101%);transition:transform .45s;z-index:-1}
+.btn:hover{transform:translateY(-3px);color:#fff;border-color:var(--rose)}.btn:hover::before{transform:none}
+.btn.fill{background:var(--rose);color:#fff;border-color:var(--rose);animation:glow 2.4s infinite}.btn.fill::before{display:none}
+@keyframes glow{0%{box-shadow:0 0 0 0 rgba(196,80,106,.5)}70%,100%{box-shadow:0 0 0 14px rgba(196,80,106,0)}}
+.btn:focus-visible,.env:focus-visible,#snd:focus-visible{outline:2px solid var(--rose);outline-offset:4px}
+.mq{position:relative;z-index:1;overflow:hidden;white-space:nowrap;border-block:1px solid var(--gold);padding:14px 0;background:var(--blush)}
+.mq div{display:inline-block;font:400 30px "Amiri",serif;color:var(--ink);animation:mq 30s linear infinite}
+.mq span{padding:0 34px}
+@keyframes mq{to{transform:translateX(-50%)}}
+footer{position:relative;z-index:1;padding:60px 22px 100px;text-align:center}
+footer p{color:var(--soft);font-size:13px;letter-spacing:.2em;margin:6px 0 0}
+#snd{position:fixed;right:18px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:65;width:48px;height:48px;border-radius:50%;border:1px solid var(--gold);background:var(--card);cursor:pointer;display:none;align-items:center;justify-content:center;gap:3px}
+#snd.show{display:flex}#snd i{width:3px;height:6px;background:var(--rose);border-radius:2px}
+#snd.on i{animation:eq .9s ease-in-out infinite alternate}#snd.on i:nth-child(2){animation-delay:-.3s}#snd.on i:nth-child(3){animation-delay:-.6s}
+@keyframes eq{to{height:20px}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01s!important;animation-delay:0s!important;transition-duration:.01s!important;transition-delay:0s!important;animation-iteration-count:1!important}}
+</style>
+</head>
+<body class="locked">
+<div id="bar"></div><i class="kas l"></i><i class="kas r"></i>
+<canvas id="fx"></canvas>
+<button id="snd" aria-label="Mute or play music"><i></i><i></i><i></i></button>
+
+<div id="gate">
+  <div class="gw">
+    <button class="env" id="openBtn" aria-label="Open the invitation">
+      <div class="eb"></div>
+      <div class="lt"><div><span>Shamna &amp; Nadeem</span><small>YOU ARE INVITED</small></div></div>
+      <div class="ef"></div><div class="fl"></div>
+      <div class="wax">S<i></i>N</div>
+    </button>
+    <div class="gtap">TAP THE ENVELOPE</div>
+  </div>
+</div>
+
+<header class="hero" id="top">
+  <div class="arch">
+    <svg class="fw" style="left:50%;top:-40px;width:92px;margin-left:-46px" viewBox="-30 -30 60 60" data-f="9" aria-hidden="true"></svg>
+    <svg class="fw" style="left:-30px;top:46%;width:66px" viewBox="-30 -30 60 60" data-f="7" aria-hidden="true"></svg>
+    <svg class="fw" style="right:-30px;top:58%;width:74px" viewBox="-30 -30 60 60" data-f="8" aria-hidden="true"></svg>
+    <div class="pre s" style="--d:0">Together with their families</div>
+    <h1>
+      <span class="nm" data-split>Shamna</span>
+      <span class="and s" style="--d:3">&amp;</span>
+      <span class="nm" data-split data-off="6">Nadeem</span>
+    </h1>
+    <div class="pre s" style="--d:5;margin-top:8px">request the honour of your presence<br>at their wedding ceremony</div>
+    <div class="dline s" style="--d:6">Thursday, <b>26 November 2026</b><br>Reception at <b>12:00 PM</b></div>
+    <div class="pre s" style="--d:7;margin-top:12px">Karad, near Ramanattukara</div>
+  </div>
+  <div class="cue"></div>
+</header>
+
+<section class="sec verse">
+  <svg class="bloom fw" viewBox="-30 -30 60 60" data-f="10" aria-hidden="true"></svg>
+  <div class="ar rv" dir="rtl"><span><em style="--i:0">وَخَلَقْنَاكُمْ</em></span><span><em style="--i:1">أَزْوَاجًا</em></span></div>
+  <div class="en rv">And We created you in pairs.<small>SURAH AN-NABA 78:8</small></div>
+</section>
+
+<section class="sec">
+  <h2 class="rv">Save the day</h2>
+  <div class="cards">
+    <div class="arc"><small>DATE</small><b data-n="26">26</b><p>Thursday</p><p>November 2026</p></div>
+    <div class="arc"><small>RECEPTION AT</small><b>12:00</b><p>Noon sharp</p><p>Insha’Allah</p></div>
+    <div class="arc"><small>PLACE</small><b>Karad</b><p>near Ramanattukara</p><p>Kerala</p></div>
+  </div>
+</section>
+
+<section class="sec">
+  <h2 class="rv">Until the Reception</h2>
+  <div class="cd rv" id="cd"></div>
+</section>
+
+<section class="sec">
+  <h2 class="rv">Join us in celebration</h2>
+  <p class="rv" style="color:var(--soft);max-width:420px;margin:0 auto 22px">Let us know you’re coming, and keep us in your duas.</p>
+  <div class="rv">
+    <a class="btn fill" id="rsvp" href="#" target="_blank" rel="noopener">RSVP ON WHATSAPP</a>
+    <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Karad+Ramanattukara+Kerala" target="_blank" rel="noopener">OPEN IN MAPS</a>
+    <button class="btn" id="cal">SAVE THE DATE</button>
+  </div>
+</section>
+
+<div class="mq" aria-hidden="true"><div id="mqIn"></div></div>
+<footer><h2 style="font-size:46px;font-style:italic">Shamna &amp; Nadeem</h2><p>26 · 11 · 2026</p></footer>
+
+<script>
+(function(){
+var CFG={date:new Date("2026-11-26T12:00:00+05:30"),phone:"",text:"Assalamu alaikum! Insha’Allah we will be at Shamna & Nadeem’s wedding on 26 November 2026. – "};
+var RM=matchMedia("(prefers-reduced-motion:reduce)").matches,NS="http://www.w3.org/2000/svg";
+var $=function(s){return document.querySelector(s)};
+
+/* letters */
+document.querySelectorAll("[data-split]").forEach(function(el){var off=+el.dataset.off||0,t=el.textContent;el.textContent="";
+  [].forEach.call(t,function(c,i){var s=document.createElement("span");s.className="ch";s.textContent=c;s.style.setProperty("--i",i+off);el.appendChild(s)})});
+
+/* flowers */
+document.querySelectorAll("[data-f]").forEach(function(svg){var n=+svg.dataset.f,h="";
+  for(var i=0;i<n;i++)h+='<ellipse cx="0" cy="-14" rx="6" ry="13" style="--k:'+i+';transform-origin:0 0;transform:rotate('+(i*360/n)+'deg) scale(0)"></ellipse>';
+  svg.innerHTML=h+'<circle r="4"/>'});
+var st=document.createElement("style");st.textContent=".lit .fw ellipse,.bloom ellipse{transform:rotate(var(--r,0deg)) scale(1)!important}";
+document.head.appendChild(st);
+document.querySelectorAll(".fw ellipse").forEach(function(e,i){var m=/rotate\(([\d.]+)deg\)/.exec(e.getAttribute("style"));e.style.setProperty("--r",m[1]+"deg")});
+
+/* marquee */
+$("#mqIn").innerHTML=Array(12).join("<span>بارك الله لكما وبارك عليكما وجمع بينكما في خير</span>");
+
+/* countdown */
+var cd=$("#cd");cd.innerHTML=["DAYS","HOURS","MINS","SECS"].map(function(l){return"<div><b>00</b><small>"+l+"</small></div>"}).join("");
+var bs=cd.querySelectorAll("b");
+function upd(){var d=Math.max(0,CFG.date-Date.now()),v=[Math.floor(d/864e5),Math.floor(d/36e5)%24,Math.floor(d/6e4)%60,Math.floor(d/1e3)%60];
+  v.forEach(function(n,i){var s=String(n).padStart(2,"0");if(bs[i].textContent!==s){bs[i].textContent=s;bs[i].classList.remove("tick");void bs[i].offsetWidth;bs[i].classList.add("tick")}})}
+upd();setInterval(upd,1000);
+
+/* scroll reveals + count-up */
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;e.target.classList.add("in");io.unobserve(e.target);
+  var c=e.target.querySelector("[data-n]");if(c&&!RM){var N=+c.dataset.n,t0=performance.now();(function f(t){var p=Math.min(1,(t-t0)/1600);c.textContent=Math.round(N*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)})(t0)}})},{threshold:.3});
+document.querySelectorAll(".rv,.arc").forEach(function(el){io.observe(el)});
+addEventListener("scroll",function(){var h=document.documentElement;$("#bar").style.transform="scaleX("+(scrollY/(h.scrollHeight-innerHeight||1))+")"},{passive:true});
+
+/* petals */
+var cv=$("#fx"),cx=cv.getContext("2d"),W,H,pet=[],bits=[],pc=["rgba(196,80,106,.6)","rgba(243,190,185,.75)","rgba(184,137,58,.6)","rgba(255,255,255,.7)"];
+function size(){var r=devicePixelRatio||1;cv.width=innerWidth*r;cv.height=innerHeight*r;cx.setTransform(r,0,0,r,0,0);W=innerWidth;H=innerHeight}
+size();addEventListener("resize",size);
+function petal(top){return{x:Math.random()*W,y:top?-20:Math.random()*H,s:6+Math.random()*8,v:.5+Math.random()*.9,ph:Math.random()*6,r:Math.random()*6,c:pc[Math.floor(Math.random()*4)]}}
+if(!RM)for(var i=0;i<26;i++)pet.push(petal());
+function drawP(x,y,s,r,sq,c){cx.save();cx.translate(x,y);cx.rotate(r);cx.scale(1,sq);cx.fillStyle=c;cx.beginPath();cx.ellipse(0,0,s,s*.55,0,0,6.3);cx.fill();cx.restore()}
+function burst(x,y,n){for(var i=0;i<n;i++){var a=Math.random()*6.28,s=3+Math.random()*7;bits.push({x:x,y:y,vx:Math.cos(a)*s,vy:Math.sin(a)*s-5,s:5+Math.random()*6,r:Math.random()*6,c:pc[i%4],l:1})}}
+function frame(t){cx.clearRect(0,0,W,H);
+  pet.forEach(function(p,i){p.y+=p.v;p.x+=Math.sin(t/900+p.ph)*.7;p.r+=.025;if(p.y>H+20)pet[i]=petal(true);drawP(p.x,p.y,p.s,p.r,.55+.45*Math.sin(t/700+p.ph),p.c)});
+  bits=bits.filter(function(b){b.x+=b.vx;b.y+=b.vy;b.vy+=.22;b.vx*=.99;b.r+=.12;b.l-=.01;if(b.l<=0)return false;cx.globalAlpha=Math.min(1,b.l);drawP(b.x,b.y,b.s,b.r,.7,b.c);cx.globalAlpha=1;return true});
+  requestAnimationFrame(frame)}
+requestAnimationFrame(frame);
+
+/* wedding music: synthesized Hijaz-style oud, drone and duff */
+var AC,master,bus,noise,on=false,step=0,nextT=0,SP=60/92/2,HZ=[293.66,311.13,369.99,392,440,466.16,523.25,587.33];
+var PH=[4,-1,3,2,1,-1,2,3,4,5,4,3,2,-1,1,0,3,-1,4,5,7,-1,5,4,3,2,1,2,0,-1,-1,-1];
+function env(g,t,pk,d){g.gain.setValueAtTime(.0001,t);g.gain.linearRampToValueAtTime(pk,t+.01);g.gain.exponentialRampToValueAtTime(.0001,t+d)}
+function pluck(f,t){var o=AC.createOscillator(),o2=AC.createOscillator(),fl=AC.createBiquadFilter(),g=AC.createGain();o.type="triangle";o2.type="sawtooth";o.frequency.value=f;o2.frequency.value=f;o2.detune.value=6;
+  fl.type="lowpass";fl.frequency.setValueAtTime(2600,t);fl.frequency.exponentialRampToValueAtTime(500,t+.7);env(g,t,.2,1);o.connect(fl);o2.connect(fl);fl.connect(g);g.connect(bus);o.start(t);o2.start(t);o.stop(t+1.1);o2.stop(t+1.1)}
+function dum(t){var o=AC.createOscillator(),g=AC.createGain();o.frequency.setValueAtTime(150,t);o.frequency.exponentialRampToValueAtTime(50,t+.2);env(g,t,.9,.4);o.connect(g);g.connect(master);o.start(t);o.stop(t+.45)}
+function nz(t,ty,f,pk,d){var s=AC.createBufferSource(),fl=AC.createBiquadFilter(),g=AC.createGain();s.buffer=noise;fl.type=ty;fl.frequency.value=f;env(g,t,pk,d);s.connect(fl);fl.connect(g);g.connect(master);s.start(t);s.stop(t+d+.05)}
+function play(s,t){var m=s%8;if(m===0||m===4)dum(t);if(m===2||m===3||m===6)nz(t,"bandpass",2400,.35,.09);nz(t,"highpass",7500,m%2?.04:.08,.05);
+  var k=PH[s%32];if(k>=0)pluck(HZ[k],t);
+  if(s%32===0)[HZ[0]/2,HZ[3]/2].forEach(function(f){var o=AC.createOscillator(),g=AC.createGain();o.frequency.value=f;env(g,t,.12,SP*30);o.connect(bus);o.start(t);o.stop(t+SP*30)})}
+function startAudio(){var A=window.AudioContext||window.webkitAudioContext;if(!A||AC)return;
+  try{AC=new A();master=AC.createGain();master.gain.setValueAtTime(0,AC.currentTime);master.gain.linearRampToValueAtTime(.5,AC.currentTime+3);master.connect(AC.destination);
+  bus=AC.createGain();bus.connect(master);var dl=AC.createDelay(),fb=AC.createGain(),wet=AC.createGain();dl.delayTime.value=.33;fb.gain.value=.38;wet.gain.value=.45;bus.connect(dl);dl.connect(fb);fb.connect(dl);dl.connect(wet);wet.connect(master);
+  noise=AC.createBuffer(1,AC.sampleRate,AC.sampleRate);var d=noise.getChannelData(0);for(var i=0;i<d.length;i++)d[i]=Math.random()*2-1;
+  nextT=AC.currentTime+.3;setInterval(function(){if(on)while(nextT<AC.currentTime+.4){play(step,nextT);nextT+=SP;step++}},100);on=true;$("#snd").classList.add("show","on")}catch(e){}}
+$("#snd").addEventListener("click",function(){if(!AC)return;on=!on;this.classList.toggle("on",on);
+  if(on){AC.resume();nextT=AC.currentTime+.2;master.gain.linearRampToValueAtTime(.5,AC.currentTime+1)}else{master.gain.linearRampToValueAtTime(0,AC.currentTime+.5);setTimeout(function(){if(!on)AC.suspend()},600)}});
+document.addEventListener("visibilitychange",function(){if(!AC)return;if(document.hidden)AC.suspend();else if(on){AC.resume();nextT=AC.currentTime+.2}});
+
+/* open envelope */
+$("#openBtn").addEventListener("click",function(){startAudio();$("#gate").classList.add("open");
+  setTimeout(function(){document.body.classList.remove("locked");document.body.classList.add("lit")},2300);
+  if(!RM)setTimeout(function(){burst(innerWidth/2,innerHeight*.5,80)},1700)});
+
+/* actions */
+$("#rsvp").addEventListener("click",function(){var n=prompt("Your name, please:")||"";this.href="https://wa.me/"+CFG.phone+"?text="+encodeURIComponent(CFG.text+n);
+  if(!RM){var r=this.getBoundingClientRect();burst(r.left+r.width/2,r.top,70)}});
+$("#cal").addEventListener("click",function(){var f=function(x){return x.toISOString().replace(/[-:]|\.\d+/g,"")},e=new Date(CFG.date.getTime()+4*36e5);
+  var ics="BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\nSUMMARY:Shamna & Nadeem Wedding (Reception 12:00 PM)\nLOCATION:Karad\\, near Ramanattukara\\, Kerala\nDTSTART:"+f(CFG.date)+"\nDTEND:"+f(e)+"\nEND:VEVENT\nEND:VCALENDAR";
+  var a=document.createElement("a");a.href="data:text/calendar;charset=utf-8,"+encodeURIComponent(ics);a.download="shamna-nadeem-wedding.ics";a.click();
+  if(!RM){var r=this.getBoundingClientRect();burst(r.left+r.width/2,r.top,50)}});
+})();
+</script>
+</body>
+</html>
