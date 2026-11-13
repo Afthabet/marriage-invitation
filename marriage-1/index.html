@@ -235,25 +235,6 @@ function frame(t){cx.clearRect(0,0,W,H);
 requestAnimationFrame(frame);
 
 /* wedding music: synthesized Hijaz-style oud, drone and duff */
-var AC,master,bus,noise,on=false,step=0,nextT=0,SP=60/92/2,HZ=[293.66,311.13,369.99,392,440,466.16,523.25,587.33];
-var PH=[4,-1,3,2,1,-1,2,3,4,5,4,3,2,-1,1,0,3,-1,4,5,7,-1,5,4,3,2,1,2,0,-1,-1,-1];
-function env(g,t,pk,d){g.gain.setValueAtTime(.0001,t);g.gain.linearRampToValueAtTime(pk,t+.01);g.gain.exponentialRampToValueAtTime(.0001,t+d)}
-function pluck(f,t){var o=AC.createOscillator(),o2=AC.createOscillator(),fl=AC.createBiquadFilter(),g=AC.createGain();o.type="triangle";o2.type="sawtooth";o.frequency.value=f;o2.frequency.value=f;o2.detune.value=6;
-  fl.type="lowpass";fl.frequency.setValueAtTime(2600,t);fl.frequency.exponentialRampToValueAtTime(500,t+.7);env(g,t,.2,1);o.connect(fl);o2.connect(fl);fl.connect(g);g.connect(bus);o.start(t);o2.start(t);o.stop(t+1.1);o2.stop(t+1.1)}
-function dum(t){var o=AC.createOscillator(),g=AC.createGain();o.frequency.setValueAtTime(150,t);o.frequency.exponentialRampToValueAtTime(50,t+.2);env(g,t,.9,.4);o.connect(g);g.connect(master);o.start(t);o.stop(t+.45)}
-function nz(t,ty,f,pk,d){var s=AC.createBufferSource(),fl=AC.createBiquadFilter(),g=AC.createGain();s.buffer=noise;fl.type=ty;fl.frequency.value=f;env(g,t,pk,d);s.connect(fl);fl.connect(g);g.connect(master);s.start(t);s.stop(t+d+.05)}
-function play(s,t){var m=s%8;if(m===0||m===4)dum(t);if(m===2||m===3||m===6)nz(t,"bandpass",2400,.35,.09);nz(t,"highpass",7500,m%2?.04:.08,.05);
-  var k=PH[s%32];if(k>=0)pluck(HZ[k],t);
-  if(s%32===0)[HZ[0]/2,HZ[3]/2].forEach(function(f){var o=AC.createOscillator(),g=AC.createGain();o.frequency.value=f;env(g,t,.12,SP*30);o.connect(bus);o.start(t);o.stop(t+SP*30)})}
-function startAudio(){var A=window.AudioContext||window.webkitAudioContext;if(!A||AC)return;
-  try{AC=new A();master=AC.createGain();master.gain.setValueAtTime(0,AC.currentTime);master.gain.linearRampToValueAtTime(.5,AC.currentTime+3);master.connect(AC.destination);
-  bus=AC.createGain();bus.connect(master);var dl=AC.createDelay(),fb=AC.createGain(),wet=AC.createGain();dl.delayTime.value=.33;fb.gain.value=.38;wet.gain.value=.45;bus.connect(dl);dl.connect(fb);fb.connect(dl);dl.connect(wet);wet.connect(master);
-  noise=AC.createBuffer(1,AC.sampleRate,AC.sampleRate);var d=noise.getChannelData(0);for(var i=0;i<d.length;i++)d[i]=Math.random()*2-1;
-  nextT=AC.currentTime+.3;setInterval(function(){if(on)while(nextT<AC.currentTime+.4){play(step,nextT);nextT+=SP;step++}},100);on=true;$("#snd").classList.add("show","on")}catch(e){}}
-$("#snd").addEventListener("click",function(){if(!AC)return;on=!on;this.classList.toggle("on",on);
-  if(on){AC.resume();nextT=AC.currentTime+.2;master.gain.linearRampToValueAtTime(.5,AC.currentTime+1)}else{master.gain.linearRampToValueAtTime(0,AC.currentTime+.5);setTimeout(function(){if(!on)AC.suspend()},600)}});
-document.addEventListener("visibilitychange",function(){if(!AC)return;if(document.hidden)AC.suspend();else if(on){AC.resume();nextT=AC.currentTime+.2}});
-
 /* open envelope */
 $("#openBtn").addEventListener("click",function(){startAudio();$("#gate").classList.add("open");
   setTimeout(function(){document.body.classList.remove("locked");document.body.classList.add("lit")},2300);
